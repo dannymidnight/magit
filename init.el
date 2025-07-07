@@ -22,6 +22,7 @@
 (use-package magit :straight t)
 (use-package catppuccin-theme :straight t :config (load-theme 'catppuccin t))
 
+(setq-default mode-line-format nil)
 (menu-bar-mode -1)
 
 (kill-buffer "*scratch*")
