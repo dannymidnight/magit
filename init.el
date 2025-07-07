@@ -22,6 +22,9 @@
 (use-package magit :straight t)
 (use-package catppuccin-theme :straight t :config (load-theme 'catppuccin t))
 
+(with-eval-after-load 'magit
+  (define-key magit-status-mode-map "q" nil))
+
 (setq-default mode-line-format nil)
 (menu-bar-mode -1)
 
