@@ -20,10 +20,10 @@
 
 (straight-use-package 'use-package)
 (use-package magit :straight t)
-(use-package zenburn-theme :straight t :config (load-theme 'zenburn t))
+(use-package catppuccin-theme :straight t :config (load-theme 'catppuccin t))
 
 (menu-bar-mode -1)
-(load-theme 'zenburn t)
+
 (kill-buffer "*scratch*")
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq inhibit-startup-screen t)
